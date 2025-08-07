@@ -4063,8 +4063,8 @@ function setupClickHandlers() {
 
     // Add click handler for variant 2 (second div)
     variant2.addEventListener('click', function() {
-        updateMainPrice('£48.95');
-        console.log('Clicked variant 2 - price changed to £48.95');
+        updateMainPrice('£49.95');
+        console.log('Clicked variant 2 - price changed to £49.95');
     });
 
     // Add click handler for variant 3 (third div)
@@ -4241,7 +4241,7 @@ function protectPrice() {
     // Protection for main price divs - start with default prices
     const mainPriceDiv1 = document.querySelector('[data-rid="1209b1a3-8dcf-4158-91b3-1c9ae9d61366"][data-variant-id="52809406579011"]');
     if (mainPriceDiv1) {
-        protectSinglePrice(mainPriceDiv1, '£48.95');
+        protectSinglePrice(mainPriceDiv1, '£49.95');
     }
 
     const mainPriceDiv2 = document.querySelector('[data-rid="1209b1a3-8dcf-4158-91b3-1c9ae9d61366"][data-variant-id="52809406644547"]');
@@ -4411,7 +4411,7 @@ function aggressivePriceProtection() {
     // Protection for main price divs - start with default prices
     const mainPriceDiv1 = document.querySelector('[data-rid="1209b1a3-8dcf-4158-91b3-1c9ae9d61366"][data-variant-id="52809406579011"]');
     if (mainPriceDiv1) {
-        aggressiveProtectSingle(mainPriceDiv1, '£48.95');
+        aggressiveProtectSingle(mainPriceDiv1, '£49.95');
     }
 
     const mainPriceDiv2 = document.querySelector('[data-rid="1209b1a3-8dcf-4158-91b3-1c9ae9d61366"][data-variant-id="52809406644547"]');
@@ -4543,8 +4543,8 @@ function intervalPriceProtection() {
         const mainPriceDiv1 = document.querySelector('[data-rid="1209b1a3-8dcf-4158-91b3-1c9ae9d61366"][data-variant-id="52809406579011"]');
         if (mainPriceDiv1) {
             const span1 = mainPriceDiv1.querySelector('span');
-            if (span1 && span1.textContent !== '£48.95') {
-                span1.textContent = '£48.95';
+            if (span1 && span1.textContent !== '£49.95') {
+                span1.textContent = '£49.95';
             }
         }
 
@@ -4594,8 +4594,8 @@ function setupClickHandlers() {
 
     // Add click handler for variant 2 (second div)
     variant2.addEventListener('click', function() {
-        updateMainPrice('£48.95');
-        console.log('Clicked variant 2 - price changed to £48.95');
+        updateMainPrice('£49.95');
+        console.log('Clicked variant 2 - price changed to £49.95');
     });
 
     // Add click handler for variant 3 (third div)
@@ -4613,8 +4613,8 @@ function setupClickHandlers() {
     // Add click handler for the new variant selector
     if (variantSelector) {
         variantSelector.addEventListener('click', function() {
-            updateMainPrice('£48.95');
-            console.log('Clicked variant selector - price changed to £48.95');
+            updateMainPrice('£49.95');
+            console.log('Clicked variant selector - price changed to £49.95');
         });
     }
 
@@ -4632,8 +4632,8 @@ function setupClickHandlers() {
 
     if (option2) {
         option2.addEventListener('click', function() {
-            updateMainPrice('£48.95');
-            console.log('Clicked option 2 (2 Masks) - price changed to £48.95');
+            updateMainPrice('£49.95');
+            console.log('Clicked option 2 (2 Masks) - price changed to £49.95');
         });
     }
 
@@ -4943,7 +4943,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Variant option prices (these should be fixed)
         '[data-rid="f4a07dd2-0ec6-431b-bc43-4cb76354ecad"]': '£29.95', // 1 mask
-        '[data-rid="dfa92d3e-1d71-493a-8c67-ecb06dc10d3e"]': '£48.95', // 3 masks  
+        '[data-rid="dfa92d3e-1d71-493a-8c67-ecb06dc10d3e"]': '£49.95', // 3 masks  
         '[data-rid="b8b84eb5-c063-48b0-8d38-534ac431e505"]': '£69.96'  // 5 masks
     };
     
@@ -4975,7 +4975,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const currentText = span.textContent;
                     // Block specific unwanted prices but allow the correct price updates
                     const unwantedPrices = ['£99.90', '£179.90', '£199.90', '£49.90'];
-                    const allowedPrices = ['£29.95', '£48.95', '£69.96'];
+                    const allowedPrices = ['£29.95', '£49.95', '£69.96'];
                     
                     if (unwantedPrices.includes(currentText)) {
                         console.log(`Blocked unwanted price ${currentText} in main display`);
@@ -5156,7 +5156,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const clickHandlers = [
             // Variant option clicks (these update the main display)
             { selector: '[data-rid="a45a58b0-0784-4298-8371-639832858e5a"]', price: '£29.95' }, // 1 mask option
-            { selector: '[data-rid="d0c3358b-5bb9-4eed-a8be-9a55d96ea913"]', price: '£48.95' }, // 3 mask option  
+            { selector: '[data-rid="d0c3358b-5bb9-4eed-a8be-9a55d96ea913"]', price: '£49.95' }, // 3 mask option  
             { selector: '[data-rid="5968ef0d-75c7-47b5-b52f-6f07f6bb7a8a"]', price: '£69.96' }  // 5 mask option
         ];
         
@@ -5195,7 +5195,7 @@ document.addEventListener('DOMContentLoaded', function() {
         initializeProtections();
         setupClickHandlers();
         console.log('Complete price protection system initialized');
-        console.log('Pricing hierarchy: 1 mask = £29.95, 3 masks = £48.95, 5 masks = £69.96');
+        console.log('Pricing hierarchy: 1 mask = £29.95, 3 masks = £49.95, 5 masks = £69.96');
     }, 1000);
     
     // Global cleanup function
